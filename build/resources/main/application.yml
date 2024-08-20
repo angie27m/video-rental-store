@@ -1,0 +1,11 @@
+spring:
+  application.name: video-rental-store
+
+logging.config: "classpath:logback.xml"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, heapdump, threaddump, loggers
+      base-path: /
